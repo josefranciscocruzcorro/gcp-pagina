@@ -55,6 +55,7 @@ let Paginas = require("./controllers/paginas");
 Paginas(app,__dirname);
 
 
-app.listen(puerto, argv.pag_ip, () => {
-    console.log("Servidor Corriendo en el puerto: " + puerto);
-});
+
+
+app.listen(8080, argv.pag_ip);
+console.log("App listening on port 8080");
