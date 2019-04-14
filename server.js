@@ -46,7 +46,7 @@ let verificarToken = (req,res,next) => {
 
 
 let UserC = require("./controllers/user");
-UserC(app,User,verificarToken);
+UserC(app,User);
 
 let LoteriaC = require("./controllers/loteria");
 LoteriaC(app,Loteria,verificarToken);
